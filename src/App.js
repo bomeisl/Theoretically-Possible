@@ -99,7 +99,7 @@ const App = () => {
                         <Image fit="cover" src="https://live.staticflickr.com/65535/53703874431_de63cb1a24_k.jpg" />
                     </Carousel>
                 </Box>
-                <Nav direction="row" background="brand" pad="medium">
+                <Nav direction="row" background="primary" pad="medium">
                     <Anchor icon={<Home />} hoverIndicator />
                     <Anchor icon={<Beacon />} hoverIndicator />
                     <Anchor icon={<PieChart />} hoverIndicator />
