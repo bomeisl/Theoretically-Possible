@@ -52,7 +52,7 @@ const App = () => {
                     shadow="none"
                     round="none"
                 >
-                    <Avatar
+                    <Image
                         alignSelf="center"
                         size="large"
                         background={"light-1"}
