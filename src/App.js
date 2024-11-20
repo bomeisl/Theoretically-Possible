@@ -11,6 +11,7 @@ import {
     Anchor, Image, Avatar, Box, Card, CardHeader, CardBody, Carousel, Grid,
 } from "grommet";
 import {Moon, Sun, Home, Beacon, PieChart} from "grommet-icons";
+import {username} from "./env_var";
 
 
 const theme = {
@@ -55,9 +56,8 @@ const App = () => {
                         alignSelf="center"
                         size="large"
                         background={"light-1"}
-                        src={"https://gravatar.com/avatar/8f65f7025001160d578dbf90e43f1998dfe23f35dc56fa6e33d0a967c5ae53ea"}
+                        src={`https://gravatar.com/${username}.card`}
                     />
-
                         <CardHeader>
                             <Text
                                 color="text"
@@ -73,8 +73,6 @@ const App = () => {
                             size="xsmall"
                             alignSelf="center"
                         >
-                            Software Engineer (Ameriprise Financial) <br/>
-                            Theoretical Condensed Matter Physics Researcher (Pixley Group)
                         </Text>
                     </CardBody>
 
@@ -104,13 +102,8 @@ const App = () => {
                     <Anchor icon={<Beacon />} hoverIndicator />
                     <Anchor icon={<PieChart />} hoverIndicator />
                 </Nav>
-
-
-
             </Header>
-
             <PageContent>
-
 
             </PageContent>
         </Page>
