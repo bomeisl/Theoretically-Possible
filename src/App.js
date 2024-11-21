@@ -11,7 +11,6 @@ import {
     Anchor, Image, Avatar, Box, Card, CardHeader, CardBody, Carousel, Grid,
 } from "grommet";
 import {Moon, Sun, Home, Beacon, PieChart} from "grommet-icons";
-import {username} from "./env_var";
 
 
 const theme = {
@@ -46,62 +45,27 @@ const App = () => {
             >
                 <Card
                     direction="column"
-                    pad="small"
+                    pad="none"
                     background="white"
                     spacing={9}
                     shadow="none"
                     round="none"
                 >
-                    <Image
+                    <iframe
                         alignSelf="center"
-                        size="large"
+                        width={430}
+                        height={200}
                         background={"light-1"}
-                        src={`https://gravatar.com/${username}.card`}
+                        src={"https://gravatar.com/8f65f7025001160d578dbf90e43f1998dfe23f35dc56fa6e33d0a967c5ae53ea.card"}
                     />
-                        <CardHeader>
-                            <Text
-                                color="text"
-                                alignSelf="center"
-                            >
-                                Kyle Bomeisl
-                            </Text>
-                        </CardHeader>
-
-                    <CardBody>
-                        <Text
-                            color="text-weak"
-                            size="xsmall"
-                            alignSelf="center"
-                        >
-                        </Text>
-                    </CardBody>
-
-
                 </Card>
                 <Text size='large'>Theoretically Possible</Text>
             </AppBar>
             <Header margin='none'>
                 <Box height="medium" width="medium" overflow="hidden" gridArea="carousel" margin='none'>
-                    <Carousel
-                        margin="xsmall"
-                        alignSelf="center"
-                        play='4000'
-                        size="xxlarge"
-                        controls={false}
-                    >
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53704138164_dfb760dcb1.jpg" />
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53704102948_75dea2a52e_o.jpg" />
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53704325725_a3313d18c7_o.jpg" />
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53704293015_459742f75b_z.jpg" />
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53704035228_7085b31f9b.jpg" />
-                        <Image fit="cover" src="https://live.staticflickr.com/65535/53703874431_de63cb1a24_k.jpg" />
-                    </Carousel>
+                    
                 </Box>
-                <Nav direction="row" background="primary" pad="medium">
-                    <Anchor icon={<Home />} hoverIndicator />
-                    <Anchor icon={<Beacon />} hoverIndicator />
-                    <Anchor icon={<PieChart />} hoverIndicator />
-                </Nav>
+
             </Header>
             <PageContent>
 
