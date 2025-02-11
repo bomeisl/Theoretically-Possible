@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
     Button,
     Grommet,
@@ -11,6 +11,9 @@ import {
     Anchor, Image, Avatar, Box, Card, CardHeader, CardBody, Carousel, Grid,
 } from "grommet";
 import {Moon, Sun, Home, Beacon, PieChart} from "grommet-icons";
+import Canvas from "./conway";
+import GasLatticeCanvas from "./gas_lattice";
+import ConwayCanvas from "./conway";
 
 
 const theme = {
@@ -35,14 +38,14 @@ const AppBar = (props) => (
      />
 );
 
+
+
 const App = () => {
     const [dark, setDark] = useState(false);
   return (
       <Grommet theme={theme}>
         <Page>
-            <AppBar
-
-            >
+            <AppBar>
                 <Card
                     direction="column"
                     pad="none"
@@ -51,13 +54,6 @@ const App = () => {
                     shadow="none"
                     round="none"
                 >
-                    <iframe
-                        alignSelf="center"
-                        width={430}
-                        height={200}
-                        background={"light-1"}
-                        src={"https://gravatar.com/8f65f7025001160d578dbf90e43f1998dfe23f35dc56fa6e33d0a967c5ae53ea.card"}
-                    />
                 </Card>
                 <Text size='large'>Theoretically Possible</Text>
             </AppBar>
@@ -68,7 +64,7 @@ const App = () => {
 
             </Header>
             <PageContent>
-
+                <GasLatticeCanvas></GasLatticeCanvas>
             </PageContent>
         </Page>
       </Grommet>
