@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 
-const GasLatticeCanvas = (props) => {
+const GasLatticeCanvasNoInteractions = (props) => {
     const canvasRef = useRef(null);
     const cols = 150;
     const rows = 150;
@@ -34,7 +34,7 @@ const GasLatticeCanvas = (props) => {
                 // Filling the rest randomly
                 else {
                     let seed = Math.random();
-                    if (seed <= 0.9) {
+                    if (seed <= 0.8) {
                         booleanArray[i][j] = [0,v_seed];
                     } else {
                         booleanArray[i][j] = [1,v_seed];
@@ -72,47 +72,43 @@ const GasLatticeCanvas = (props) => {
                     let new_y = j + velocities[particle_velocity][1];
                     booleanArray[i][j] = booleanArray[new_x][new_y];
                 }
-                if (booleanArray[i][j][1] === 2 &&  booleanArray[i+1][j][1] === 3) {
-                    booleanArray[i][j][1] = 3;
-                    booleanArray[i+1][j][1] = 2;
-                }
-                if (booleanArray[i][j][1] === 0 &&  booleanArray[i][j+1][1] === 1) {
-                    booleanArray[i][j][1] = 1;
-                    booleanArray[i][j+1][1] = 0;
-                }
-                if (booleanArray[i][j][1] === 4 &&  booleanArray[i+1][j+1][1] === 5) {
-                    booleanArray[i][j][1] = 5;
-                    booleanArray[i+1][j+1][1] = 4;
-                }
-                if (i === 0) {
-                    if (booleanArray[i][j][1] === 3) {
-                        booleanArray[i][j][1] = 2;
-                    }
-                    if (booleanArray[i][j][1] === 5) {
-                        booleanArray[i][j][1] = 4;
-                    }
-                    if (booleanArray[i][j][1] === 5) {
-                        booleanArray[i][j][1] = 6;
-                    }
-                }
-                if (j === 0) {
-                    if (booleanArray[i][j][1] === 1) {
-                        booleanArray[i][j][1] = 0;
-                    }
-                    if (booleanArray[i][j][1] === 6) {
-                        booleanArray[i][j][1] = 5;
-                    }
-                    if (booleanArray[i][j][1] === 6) {
-                        booleanArray[i][j][1] = 7;
-                    }
-                }
+                // if (booleanArray[i][j][1] === 2 &&  booleanArray[i+1][j][1] === 3) {
+                //     booleanArray[i][j][1] = 3;
+                //     booleanArray[i+1][j][1] = 2;
+                // }
+                // if (booleanArray[i][j][1] === 0 &&  booleanArray[i][j+1][1] === 1) {
+                //     booleanArray[i][j][1] = 1;
+                //     booleanArray[i][j+1][1] = 0;
+                // }
+                // if (booleanArray[i][j][1] === 4 &&  booleanArray[i+1][j+1][1] === 5) {
+                //     booleanArray[i][j][1] = 5;
+                //     booleanArray[i+1][j+1][1] = 4;
+                // }
+                // if (i === 0) {
+                //     if (booleanArray[i][j][1] === 3) {
+                //         booleanArray[i][j][1] = 2;
+                //     }
+                //     if (booleanArray[i][j][1] === 5) {
+                //         booleanArray[i][j][1] = 4;
+                //     }
+                //     if (booleanArray[i][j][1] === 5) {
+                //         booleanArray[i][j][1] = 6;
+                //     }
+                // }
+                // if (j === 0) {
+                //     if (booleanArray[i][j][1] === 1) {
+                //         booleanArray[i][j][1] = 0;
+                //     }
+                //     if (booleanArray[i][j][1] === 6) {
+                //         booleanArray[i][j][1] = 5;
+                //     }
+                //     if (booleanArray[i][j][1] === 6) {
+                //         booleanArray[i][j][1] = 7;
+                //     }
+                // }
             }
         }
         return booleanArray;
-    }
-
-    const collision = (particle1, particle2) => {
-
     }
 
     useEffect(() => {
@@ -158,5 +154,5 @@ const GasLatticeCanvas = (props) => {
     );
 }
 
-export default GasLatticeCanvas;
+export default GasLatticeCanvasNoInteractions;
 

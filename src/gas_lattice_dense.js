@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 
-const GasLatticeCanvas = (props) => {
+const GasLatticeCanvasDense = (props) => {
     const canvasRef = useRef(null);
     const cols = 150;
     const rows = 150;
@@ -34,7 +34,7 @@ const GasLatticeCanvas = (props) => {
                 // Filling the rest randomly
                 else {
                     let seed = Math.random();
-                    if (seed <= 0.9) {
+                    if (seed <= 0.6) {
                         booleanArray[i][j] = [0,v_seed];
                     } else {
                         booleanArray[i][j] = [1,v_seed];
@@ -111,10 +111,6 @@ const GasLatticeCanvas = (props) => {
         return booleanArray;
     }
 
-    const collision = (particle1, particle2) => {
-
-    }
-
     useEffect(() => {
         const canvas = canvasRef.current;
         const context = canvas.getContext('2d');
@@ -158,5 +154,5 @@ const GasLatticeCanvas = (props) => {
     );
 }
 
-export default GasLatticeCanvas;
+export default GasLatticeCanvasDense;
 
