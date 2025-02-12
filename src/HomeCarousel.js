@@ -3,6 +3,7 @@ import GasLatticeCard from "./GasLatticeCard";
 import {Image} from "grommet";
 import GukuraCard from "./GukuraCard";
 import GPECard from "./GPECard";
+import QuantumComputingCard from "./QuantumComputingCard";
 
 
 function HomeCarousel() {
@@ -16,6 +17,9 @@ function HomeCarousel() {
             </Carousel.Item>
             <Carousel.Item>
                 <GPECard/>
+            </Carousel.Item>
+            <Carousel.Item>
+                <QuantumComputingCard/>
             </Carousel.Item>
         </Carousel>
     );

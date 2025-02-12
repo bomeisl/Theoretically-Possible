@@ -55,38 +55,23 @@ const App = () => {
       <Grommet theme={theme}>
         <Page>
             <div id={"root"} align={"center"}>
-            <AppBar pad={"none"} alignContent={"center"}>
                 <div align={"center"}>
-                    <Card
-                        spacing={0}
-                        pad={"xsmall"}
-                        shadow="none"
-                        shape={"circle"}
-                        position={"relative"}
+                    <Card pad={"small"} direction={"column"} background={'#D3D3D3'}>
+                    <Image
+                        alt={"Kyle"}
+                        src={"kyle15.png"}
+                        width={window.innerWidth / 10}
                         align={"center"}
-                        alignContent={"center"}
                         alignSelf={"center"}
-                        width={"100%"}
-                    >
-                        <CardHeader>
+                        border={"none"}
+                    />
+                        <CardBody direction={"column"}>
                             <Text size={"large"}>Kyle Bomeisl</Text>
-                        </CardHeader>
-                        <CardBody position={"relative"} align={"center"}>
-
-                            <Image
-                                alt={"Kyle"}
-                                src={"kyle15.png"}
-                                width={window.innerWidth / 10}
-                                align={"center"}
-                                border={"none"}
-                            />
+                            <Text size={"small"}>Computational and theoretical physics and software development</Text>
                         </CardBody>
                     </Card>
                 </div>
-                <Text size='large' >Theoretically Possible</Text>
-            </AppBar>
             <Header margin='none'>
-
             </Header>
             <PageContent alignContent={"center"}>
                 <HomeCarousel position={"relative"} alignContent={"center"}/>
