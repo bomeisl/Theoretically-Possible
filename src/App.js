@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
     Button,
     Grommet,
@@ -17,6 +18,8 @@ import ConwayCanvas from "./conway";
 import Gas_lattice_no_interactions from "./gas_lattice_no_interactions";
 import GasLatticeCanvasDense from "./gas_lattice_dense";
 import {CardFooter} from "grommet/es6";
+import HomeCarousel from "./HomeCarousel";
+import UncontrolledExample from "./HomeCarousel";
 
 
 const theme = {
@@ -53,17 +56,24 @@ const App = () => {
         <Page>
             <div id={"root"} align={"center"}>
             <AppBar pad={"none"} alignContent={"center"}>
-                <div direction={"column"} align={"center"}>
-
+                <div align={"center"}>
                     <Card
-                        spacing={1}
+                        spacing={0}
                         pad={"xsmall"}
                         shadow="none"
                         shape={"circle"}
+                        position={"relative"}
+                        align={"center"}
+                        alignContent={"center"}
+                        alignSelf={"center"}
+                        width={"100%"}
                     >
-                        <CardBody>
-                            <h1>Kyle Bomeisl</h1>
-                            <img
+                        <CardHeader>
+                            <Text size={"large"}>Kyle Bomeisl</Text>
+                        </CardHeader>
+                        <CardBody position={"relative"} align={"center"}>
+
+                            <Image
                                 alt={"Kyle"}
                                 src={"kyle15.png"}
                                 width={window.innerWidth / 10}
@@ -79,29 +89,7 @@ const App = () => {
 
             </Header>
             <PageContent alignContent={"center"}>
-                <Card direction="column" spacing={0} alignContent={"center"}>
-                    <CardHeader alignContent={"center"} alignSelf={"center"} direction={"row"}>
-                        <Image src={"react-2.svg"} width={window.innerWidth/30}></Image>
-                        <Text size='medium' alignSelf={'center'} >ReactJS Implementation of Modified Lattice Gas FHP Model</Text>
-                    </CardHeader>
-                    <CardBody direction={"row"}>
-                    <div id={"gas_lattice"}>
-                        <GasLatticeCanvas></GasLatticeCanvas>
-                        <h3>Density = 0.1D</h3>
-                    </div>
-                    <div id={"gas_lattice_no_interactions"}>
-                        <Gas_lattice_no_interactions></Gas_lattice_no_interactions>
-                        <h3>Density = 0.2D</h3>
-                    </div>
-                    <div id={"gas_lattice_no_interactions"}>
-                        <GasLatticeCanvasDense></GasLatticeCanvasDense>
-                        <h3>Density = 0.4D</h3>
-                    </div>
-                    </CardBody>
-                    <CardFooter direction={"row"}>
-
-                    </CardFooter>
-                </Card>
+                <HomeCarousel position={"relative"} alignContent={"center"}/>
             </PageContent>
             </div>
         </Page>
