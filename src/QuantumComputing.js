@@ -1,9 +1,12 @@
 import NavAppBar from "./NavAppBar";
-import {Grommet, Header, Page, PageHeader, Text} from "grommet";
+import {Grommet, Header, Page, PageContent, PageHeader, Text} from "grommet";
 import {Col, Container, Row} from "react-bootstrap";
 import AppBar from "./AppBar";
+import VideoFrame from "./VideoFrame";
+import {Link} from "react-router-dom";
+import React from "react";
 
-const QuantumComputing = (theme) => {
+const QuantumComputing = ({theme}) => {
     return(
         <Page>
             <Container fluid={true}>
@@ -20,10 +23,10 @@ const QuantumComputing = (theme) => {
                     <Header>
                         <Col>
                         <Row>
-                            <Text textAlign={'center'}>Quantum Computing</Text>
+                            <Text textAlign={'center'}>Master Quantum Computing</Text>
                         </Row>
                         <Row>
-                            <Text textAlign={'center'}>Quantum Computing
+                            <Text textAlign={'center'} color={"#44617b"}>
                                 "Nature isn't classical, dammit, and if you want to make a simulation of nature,
                                 you'd better make it quantum mechanical" - Richard Feynman
                             </Text>
@@ -32,10 +35,15 @@ const QuantumComputing = (theme) => {
                     </Header>
                 </AppBar>
             <NavAppBar theme={theme}></NavAppBar>
-            </div>
+                <PageContent alignContent={'center'}>
+                   <Text>Lessons</Text>
+                    <Link to="/quantum_computing/1" style={{ color: '#080E4B', textDecoration: 'none'}}>I. State and Information</Link>
+                </PageContent>
+                </div>
             </Container>
         </Page>
     );
 };
 
 export default QuantumComputing;
+
