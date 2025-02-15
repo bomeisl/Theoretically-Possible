@@ -1,7 +1,4 @@
 import {Card, CardBody, CardHeader, Image, Text} from "grommet";
-import GasLatticeCanvas from "./gas_lattice";
-import Gas_lattice_no_interactions from "./gas_lattice_no_interactions";
-import GasLatticeCanvasDense from "./gas_lattice_dense";
 import React from "react";
 
 const QuantumComputingCard = () => {
@@ -14,7 +11,7 @@ const QuantumComputingCard = () => {
             pad={"none"}
             width={"100%"}>
             <CardHeader alignContent={"center"} alignSelf={"center"} direction={"row"}>
-                <Text size='medium' alignSelf={'center'} >Implementation of the Deutsche Algorithm in Qiskit and My Series of Lectures on Quantum Computing</Text>
+                <Text size='medium' alignSelf={'center'} >Implementation of the Deutsch Algorithm in Qiskit and My Series of Lectures on Quantum Computing</Text>
                 <a href={"https://github.com/bomeisl/DeutschAlgorithm"}>
                     <Image src={"github_logo.svg"} width={window.innerWidth/30}></Image>
                 </a>
