@@ -107,10 +107,14 @@ const HomePage = (theme) => {
                         </Col>
                     </Row>
                     <Row align={"center"}>
-                        <Text>
-                            Interested in computational physics, theoretical condensed matter physics and software development.
+                        <Text color={"black"}>
                             My degree is in Mathematical Physics and I worked as a researcher for the Pixley Theoretical Condensed
-                            Matter Physics Group and as a software engineer for Ameriprise Financial.
+                            Matter Physics Group and as a software engineer for Ameriprise Financial. My professional experience includes
+                            parallel processing and high-performance computers (HPC), a deep working knowledge of numerical algebra, linear algebra and matrix manipulation,
+                            proficiency in Python, Java, Kotlin, and C++, manipulating data and presenting results in useful formats using tools such as Excel, MATLAB or Mathematica,
+                            in-depth knowledge of job scheduling tools like SLURM, with an ability to configure and optimize job submissions for computational research,
+                            performing CMT simulations on local computing clusters and HPC systems,
+                            writing high-quality software with adherence to professional best practices including using Git, unit testing, and documentation
                         </Text>
                         <Text size={"small"}>
                         </Text>

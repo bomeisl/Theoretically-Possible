@@ -26,6 +26,7 @@ import QuantumComputing from "./QuantumComputing";
 import ThemeProvider from "./ThemeProvider";
 import HomePage from "./Home";
 import LessonPage from "./LessonPage";
+import MasteringPhysics from "./MasteringPhysics";
 
 const theme = {
     global: {
@@ -54,7 +55,9 @@ const App = () => {
             <Router>
                 <Routes>
                     <Route exact path="/" element={<HomePage/>}/>
+                    <Route path="/mastering_physics" element={<MasteringPhysics/>}/>
                     <Route path="/quantum_computing" element={<QuantumComputing/>}/>
+                    <Route path="/mastering_physics/quantum_computing" element={<QuantumComputing/>}/>
                     <Route
                         path="/quantum_computing/1"
                         element={
