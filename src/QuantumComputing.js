@@ -1,5 +1,5 @@
 import NavAppBar from "./NavAppBar";
-import {Grommet, Header, Page, PageContent, PageHeader, Text} from "grommet";
+import {Card, CardBody, CardHeader, Grommet, Header, Image, Page, PageContent, PageHeader, Text} from "grommet";
 import {Col, Container, Row} from "react-bootstrap";
 import AppBar from "./AppBar";
 import VideoFrame from "./VideoFrame";
@@ -21,9 +21,15 @@ const QuantumComputing = ({theme}) => {
                     shadow={'md'}
                 >
                     <Header>
+                        <Container fluid={true}>
                         <Col>
-                        <Row>
-                            <Text textAlign={'center'}>Master Quantum Computing</Text>
+                        <Row align={"start"}>
+                            <Col>
+                            <Image src={"mastering_physics.jpeg"} height={window.innerHeight/7}></Image>
+                            </Col>
+                            <Col>
+                            <Text textAlign={'center'} size={'xlarge'}>Master Quantum Computing</Text>
+                            </Col>
                         </Row>
                         <Row>
                             <Text textAlign={'center'} color={"#44617b"}>
@@ -32,12 +38,17 @@ const QuantumComputing = ({theme}) => {
                             </Text>
                         </Row>
                         </Col>
+                        </Container>
                     </Header>
                 </AppBar>
             <NavAppBar theme={theme}></NavAppBar>
                 <PageContent alignContent={'center'}>
-                   <Text>Lessons</Text>
+                   <Text>Course Syllabus</Text>
                     <Link to="/quantum_computing/1" style={{ color: '#080E4B', textDecoration: 'none'}}>I. State and Information</Link>
+                    <Link to="/quantum_computing/2" style={{ color: '#080E4B', textDecoration: 'none'}}>II. An Introduction to Quantum Mechanics Pt. 1</Link>
+                    <Link to="/quantum_computing/3" style={{ color: '#080E4B', textDecoration: 'none'}}>III. An Introduction to Quantum Mechanics Pt. 2</Link>
+                    <Link to="/quantum_computing/4" style={{ color: '#080E4B', textDecoration: 'none'}}>IV. Single Qubits</Link>
+                    <Link to="/quantum_computing/5" style={{ color: '#808080', textDecoration: 'none'}}>V. Multiple Qubits</Link>
                 </PageContent>
                 </div>
             </Container>

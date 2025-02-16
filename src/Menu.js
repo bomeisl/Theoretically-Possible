@@ -3,13 +3,13 @@ import '@szhsin/react-menu/dist/index.css';
 import '@szhsin/react-menu/dist/transitions/zoom.css';
 import {Link} from "react-router-dom";
 import React from "react";
-import {Image} from "grommet";
+import { Menu as MenuIcon} from 'grommet-icons' ;
 
-export default function HamburgerMenu() {
+const HamburgerMenu = () => {
     return (
         <Menu menuButton={
             <MenuButton>
-                <Image src={"hamburger.svg"}></Image>
+                <MenuIcon color={"black"}/>
             </MenuButton>
         } transition>
             <MenuItem>
@@ -33,4 +33,4 @@ export default function HamburgerMenu() {
         </Menu>
     );
 }
-
+export default HamburgerMenu;
