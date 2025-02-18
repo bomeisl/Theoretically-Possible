@@ -110,10 +110,18 @@ const HomePage = (theme) => {
                         <Text color={"black"}>
                             My degree is in Mathematical Physics and I worked as a researcher for the Pixley Theoretical Condensed
                             Matter Physics Group and as a software engineer for Ameriprise Financial. My professional experience includes
-                            parallel processing and high-performance computers (HPC), a deep working knowledge of numerical algebra, linear algebra and matrix manipulation,
-                            proficiency in Python, Java, Kotlin, and C++, manipulating data and presenting results in useful formats using tools such as Excel, MATLAB or Mathematica,
-                            in-depth knowledge of job scheduling tools like SLURM, with an ability to configure and optimize job submissions for computational research,
-                            performing CMT simulations on local computing clusters and HPC systems,
+                            code development and running high-fidelity simulations with parallel processing and high-performance computers (HPC),
+                            distributed computing, and Linux-based HPC clusters. I have a
+                            deep working knowledge of numerical linear algebra,
+                            numerical solutions to ordinary, stochastic, and partial differential equations,
+                            large sparse matrix problems, finite difference, finite element, Monte Carlo simulations, fast numerical methods,
+                            Galerkin methods, vector finite elements, integral equations, numerical algebra, Multi-level Fast Multipole Methods,
+                            engineering optimization, and cold atom dynamics.
+                            I'm proficient in Python (including libraries like NumPy, SciPy, and Matplotlib), Java, Kotlin, Julia, and C++, as well as cleaning data
+                            and presenting results in useful formats using tools such as Excel, MATLAB or Mathematica.
+                            I have in-depth knowledge of job scheduling tools like SLURM with an ability to configure and optimize job submissions
+                            for computational research,
+                            performing Condensed Matter Theory and Materials Science simulations on local computing clusters and HPC systems, and
                             writing high-quality software with adherence to professional best practices including using Git, unit testing, and documentation
                         </Text>
                         <Text size={"small"}>

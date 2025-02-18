@@ -61,7 +61,7 @@ const MasteringPhysics = ({theme}) => {
                                         <Container fluid={true}>
                                             <Row className="justify-content-md-center">
                                                 <Col sm={7}>
-                                                    <Image src={"qiskit.png"} width={window.innerWidth/3}/>
+                                                    <Image src={"qiskit.png"} width={window.innerWidth/5}/>
                                                 </Col>
                                             </Row>
                                             <Row className="justify-content-md-center">
