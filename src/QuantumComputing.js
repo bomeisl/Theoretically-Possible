@@ -45,10 +45,11 @@ const QuantumComputing = ({theme}) => {
                 <PageContent alignContent={'center'}>
                    <Text>Course Syllabus</Text>
                     <Link to="/quantum_computing/1" style={{ color: '#080E4B', textDecoration: 'none'}}>I. State and Information</Link>
-                    <Link to="/quantum_computing/2" style={{ color: '#080E4B', textDecoration: 'none'}}>II. An Introduction to Quantum Mechanics Pt. 1</Link>
-                    <Link to="/quantum_computing/3" style={{ color: '#080E4B', textDecoration: 'none'}}>III. An Introduction to Quantum Mechanics Pt. 2</Link>
-                    <Link to="/quantum_computing/4" style={{ color: '#080E4B', textDecoration: 'none'}}>IV. Single Qubits</Link>
-                    <Link to="/quantum_computing/5" style={{ color: '#808080', textDecoration: 'none'}}>V. Multiple Qubits</Link>
+                    <Link to="/quantum_computing/2" style={{ color: '#080E4B', textDecoration: 'none'}}>II. Classical Computing</Link>
+                    <Link to="/quantum_computing/3" style={{ color: '#080E4B', textDecoration: 'none'}}>III. An Introduction to Quantum Mechanics Pt. 1</Link>
+                    <Link to="/quantum_computing/4" style={{ color: '#080E4B', textDecoration: 'none'}}>IV. An Introduction to Quantum Mechanics Pt. 2</Link>
+                    <Link to="/quantum_computing/5" style={{ color: '#080E4B', textDecoration: 'none'}}>V. Single Qubits</Link>
+                    <Link to="/quantum_computing/6" style={{ color: '#808080', textDecoration: 'none'}}>VI. Multiple Qubits</Link>
                 </PageContent>
                 </div>
             </Container>
