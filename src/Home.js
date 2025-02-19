@@ -107,7 +107,7 @@ const HomePage = (theme) => {
                         </Col>
                     </Row>
                     <Row align={"center"}>
-                        <Text color={"black"}>
+                        <Text size={"small"} color={"black"}>
                             My degree is in Mathematical Physics and I worked as a researcher for the Pixley Theoretical Condensed
                             Matter Physics Group and as a software engineer for Ameriprise Financial. My professional experience includes
                             code development and running high-fidelity simulations with parallel processing and high-performance computers (HPC),

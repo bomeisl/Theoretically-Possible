@@ -1,5 +1,5 @@
 import NavAppBar from "./NavAppBar";
-import {Header, Page, PageContent, Text,Image} from "grommet";
+import {Header, Page, PageContent, Text, Image, Card} from "grommet";
 import {Col, Container, Row} from "react-bootstrap";
 import AppBar from "./AppBar";
 import VideoFrame from "./VideoFrame";
@@ -22,14 +22,14 @@ const LessonPage = ({theme, url, uri, title}) => {
                     >
                         <Header>
                             <Container fluid={true}>
-                                <Col>
-                                    <Row align={"start"}>
-                                        <Col>
-                                            <Image src={"mastering_physics.jpeg"} height={window.innerHeight/7}></Image>
+                                <Row alignItems={"center"}>
+                                    <Row>
+                                        <Col sm={18} align={"center"}>
+                                        <Image align={"center"} src={require("./mastering_physics.jpeg")} width="10%"></Image>
                                         </Col>
-                                        <Col>
-                                            <Text textAlign={'center'} size={'xlarge'}>Master Quantum Computing</Text>
-                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Text textAlign={'center'} size={'xlarge'}>Master Quantum Computing</Text>
                                     </Row>
                                     <Row>
                                         <Text textAlign={'center'} color={"#44617b"}>
@@ -37,15 +37,17 @@ const LessonPage = ({theme, url, uri, title}) => {
                                             you'd better make it quantum mechanical" - Richard Feynman
                                         </Text>
                                     </Row>
-                                </Col>
+                                </Row>
                             </Container>
                         </Header>
                     </AppBar>
                     <NavAppBar theme={theme}></NavAppBar>
                     <PageContent>
                         <Container fluid={true}>
-                            <Row>
-                                <Text>{title}</Text>
+                            <Row alignItems={"center"}>
+                                <Card pad={"medium"}>
+                                    <Text textAlign={"center"}>{title}</Text>
+                                </Card>
                             </Row>
                             <Row>
                                 <VideoFrame url={url}></VideoFrame>

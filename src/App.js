@@ -69,25 +69,25 @@ const App = () => {
                         path="/quantum_computing/2"
                         element={
                             <LessonPage
-                                url={"https://www.youtube.com/embed/uXrq3z2q3B0?si=HH-cWZK6KxtN1sbB"}
-                                uri={""}
-                                title={"Lesson 2: Classical Computing"}
+                                url={"https://www.youtube.com/embed/uXrq3z2q3B0?si=nP-unUOD-DYKr5nP"}
+                                uri={"https://docs.google.com/document/d/1wJ3tH_d2hhw3yFJLdPWrEBKoLqWyGFOk6FntNfWNaEM/edit?usp=sharing"}
+                                title={"Lesson 2: An Introduction to Quantum Mechanics Pt. 1"}
                             />}/>
                     <Route
                         path="/quantum_computing/3"
                         element={
                             <LessonPage
-                                url={"https://www.youtube.com/embed/uXrq3z2q3B0?si=nP-unUOD-DYKr5nP"}
-                                uri={"https://docs.google.com/document/d/1wJ3tH_d2hhw3yFJLdPWrEBKoLqWyGFOk6FntNfWNaEM/edit?usp=sharing"}
-                                title={"Lesson 3: An Introduction to Quantum Mechanics Pt. 1"}
+                                url={"https://www.youtube.com/embed/Fs7-dr8yrcE?si=ryPBK_gliSJzGBYO"}
+                                uri={"https://docs.google.com/document/d/1qwupBhAzlBFkGRei91kHeaXGIdXDQWwmSrNud3eJO_o/edit?usp=sharing"}
+                                title={"Lesson 3: Quantum Mechanics Pt. 2"}
                             />}/>
                     <Route
                         path="/quantum_computing/4"
                         element={
                             <LessonPage
-                                url={"https://www.youtube.com/embed/Fs7-dr8yrcE?si=ryPBK_gliSJzGBYO"}
-                                uri={"https://docs.google.com/document/d/1qwupBhAzlBFkGRei91kHeaXGIdXDQWwmSrNud3eJO_o/edit?usp=sharing"}
-                                title={"Lesson 4: Quantum Mechanics Pt. 2"}
+                                url={"https://www.youtube.com/embed/7tLNDyXawps?si=8534S8pAvHlsRS3T"}
+                                uri={"https://docs.google.com/document/d/1eg6_b8uDv3wmZu0sH0zx3ohZ8gN5fiF7HxsiG8L7-jw/edit?usp=sharing"}
+                                title={"Lesson 4: Classical Computing"}
                             />}/>
                     <Route
                         path="/quantum_computing/5"
@@ -112,9 +112,3 @@ const App = () => {
 }
 
 export default App;
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QKPUrITdoPY?si=gwTO6G00xozM6HN2"
-        title="YouTube video player" frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen></iframe>
