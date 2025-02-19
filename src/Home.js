@@ -24,6 +24,7 @@ const HomePage = (theme) => {
                             Theoretically Possible
                         </Text>
                     </Row>
+                    <Container fluid={true}>
                     <Row>
                         <Col alignSelf={"center"} alignItems={"center"}>
                             <span
@@ -106,6 +107,7 @@ const HomePage = (theme) => {
                             </Row>
                         </Col>
                     </Row>
+                    </Container>
                     <Row align={"center"}>
                         <Text size={"small"} color={"black"}>
                             My degree is in Mathematical Physics and I worked as a researcher for the Pixley Theoretical Condensed

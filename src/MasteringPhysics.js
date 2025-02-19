@@ -44,35 +44,20 @@ const MasteringPhysics = ({theme}) => {
                                 <Text textAlign={"center"}>Courses</Text>
                             </Row>
                             <Row className="justify-content-md-center">
-                                <Col sm={8}>
-                                <Card pad={'small'} width={window.innerWidth/3}>
-                                    <CardHeader alignContent={'center'}>
-                                        <Container fluid={true}>
-                                        <Row className="justify-content-md-center">
-                                            <Col sm={4}>
-                                    <Link to="/mastering_physics/quantum_computing" style={{ color: '#080E4B', textDecoration: 'none'}}>
-                                        <Text textAlign={"center"}>Master Quantum Computing</Text>
-                                    </Link>
-                                            </Col>
-                                        </Row>
-                                        </Container>
-                                    </CardHeader>
-                                    <CardBody>
-                                        <Container fluid={true}>
-                                            <Row className="justify-content-md-center">
-                                                <Col sm={7}>
-                                                    <Image src={"qiskit.png"} width={window.innerWidth/5}/>
-                                                </Col>
-                                            </Row>
-                                            <Row className="justify-content-md-center">
-                                                <Col sm={3}>
-                                                <Text textAlign={"center"}>
-                                                    Learn Quantum Computing
-                                                </Text>
-                                                </Col>
-                                            </Row>
-                                        </Container>
-                                    </CardBody>
+                                <Col xs lg="2">
+                                <Card pad={'small'} width={window.innerWidth/3} direction={'row'} alignContent={'center'}>
+                                            <Link to="/mastering_physics/quantum_computing" style={{ color: '#080E4B', textDecoration: 'none'}}>
+                                                <Container>
+                                                <Row>
+                                                <Text textAlign={"center"}>Master Quantum Computing</Text>
+                                                </Row>
+                                                <Row>
+
+                                                <Image src={"qiskit.png"} alignSelf={"center"} width={window.innerWidth/3} height={'auto'} />
+
+                                                </Row>
+                                                </Container>
+                                            </Link>
                                 </Card>
                                 </Col>
                             </Row>
