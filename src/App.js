@@ -61,8 +61,8 @@ const App = () => {
                     <Route
                         path="/quantum_computing/1"
                         element={
-                            <LessonPage url={"https://www.youtube.com/embed/vN390pcLnKw?si=XtFaAh7ba3wG4IKZ"}
-                                        uri={""}
+                            <LessonPage url={"https://www.youtube.com/embed/ieqqOWQ1BXs?si=JzFyC5nNeFjcjvI4"}
+                                        uri={"https://docs.google.com/document/d/1OhlaSGW1DemyO-5m4nSiFwXKMwpZ-MGRRWnDNLeFkH4/edit?usp=sharing"}
                                         title={"Lesson 1: State and Information"}
                             />}/>
                     <Route
