@@ -2,11 +2,10 @@ import NavAppBar from "./NavAppBar";
 import {Header, Page, PageContent, Text, Image, Card} from "grommet";
 import {Col, Container, Row} from "react-bootstrap";
 import AppBar from "./AppBar";
-import VideoFrame from "./VideoFrame";
 import NotesIFrame from "./NotesIFrame";
 import React from "react";
 
-const LessonPage = ({theme, url, uri, title}) => {
+const LessonPage = ({theme, url, uri, title, pdfFile}) => {
     return(
         <Page>
             <Container fluid={true}>
@@ -50,7 +49,7 @@ const LessonPage = ({theme, url, uri, title}) => {
                                 </Card>
                             </Row>
                             <Row>
-                                <VideoFrame url={url}></VideoFrame>
+                                <NotesIFrame uri={url}/>
                             </Row>
                             <Row>
                                 <NotesIFrame uri={uri} title={"Lecture 2 Notes"}></NotesIFrame>

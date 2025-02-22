@@ -27,6 +27,7 @@ import ThemeProvider from "./ThemeProvider";
 import HomePage from "./Home";
 import LessonPage from "./LessonPage";
 import MasteringPhysics from "./MasteringPhysics";
+import lec1 from './Lec1(State,Info,Comp).pdf';
 
 const theme = {
     global: {
@@ -62,40 +63,45 @@ const App = () => {
                         path="/quantum_computing/1"
                         element={
                             <LessonPage url={"https://www.youtube.com/embed/ieqqOWQ1BXs?si=JzFyC5nNeFjcjvI4"}
-                                        uri={"https://docs.google.com/document/d/1OhlaSGW1DemyO-5m4nSiFwXKMwpZ-MGRRWnDNLeFkH4/edit?usp=sharing"}
+                                        uri={"https://lecture-1.tiiny.site/Lect_1State,Info,Comp.pdf"}
                                         title={"Lesson 1: State and Information"}
+                                        pdfFile={lec1}
                             />}/>
                     <Route
                         path="/quantum_computing/2"
                         element={
                             <LessonPage
                                 url={"https://www.youtube.com/embed/uXrq3z2q3B0?si=nP-unUOD-DYKr5nP"}
-                                uri={"https://docs.google.com/document/d/1wJ3tH_d2hhw3yFJLdPWrEBKoLqWyGFOk6FntNfWNaEM/edit?usp=sharing"}
+                                uri={"https://lecture-1.tiiny.site/Lec_2QM1.pdf"}
                                 title={"Lesson 2: An Introduction to Quantum Mechanics Pt. 1"}
+                                pdfFile={lec1}
                             />}/>
                     <Route
                         path="/quantum_computing/3"
                         element={
                             <LessonPage
                                 url={"https://www.youtube.com/embed/Fs7-dr8yrcE?si=ryPBK_gliSJzGBYO"}
-                                uri={"https://docs.google.com/document/d/1qwupBhAzlBFkGRei91kHeaXGIdXDQWwmSrNud3eJO_o/edit?usp=sharing"}
+                                uri={"https://lecture-1.tiiny.site/Lec3QM2.pdf"}
                                 title={"Lesson 3: Quantum Mechanics Pt. 2"}
+                                pdfFile={lec1}
                             />}/>
                     <Route
                         path="/quantum_computing/4"
                         element={
                             <LessonPage
                                 url={"https://www.youtube.com/embed/7tLNDyXawps?si=8534S8pAvHlsRS3T"}
-                                uri={"https://docs.google.com/document/d/1eg6_b8uDv3wmZu0sH0zx3ohZ8gN5fiF7HxsiG8L7-jw/edit?usp=sharing"}
+                                uri={"https://lecture-1.tiiny.site/Lec_4Classical_Computing.pdf"}
                                 title={"Lesson 4: Classical Computing"}
+                                pdfFile={lec1}
                             />}/>
                     <Route
                         path="/quantum_computing/5"
                         element={
                             <LessonPage
                                 url={"https://www.youtube.com/embed/QKPUrITdoPY?si=gwTO6G00xozM6HN2"}
-                                uri={"https://docs.google.com/document/d/1T-bfFnTaFj6QM5SUddMMPF8WMoJCeExOPL_yek_82oU/edit?usp=sharing"}
+                                uri={"https://lecture-1.tiiny.site/Lec4___Quantum_Bits-1.pdf"}
                                 title={"Lesson 5: The Qubit"}
+                                pdfFile={lec1}
                             />}/>
                     <Route
                         path="/quantum_computing/6"
@@ -104,6 +110,7 @@ const App = () => {
                                 url={"https://www.youtube.com/embed/QKPUrITdoPY?si=NFnqtx5mU4o0aCJg"}
                                 uri={"https://docs.google.com/document/d/1T-bfFnTaFj6QM5SUddMMPF8WMoJCeExOPL_yek_82oU/edit?usp=sharing"}
                                 title={"Lesson 6: Multiple Qubits"}
+                                pdfFile={lec1}
                             />}/>
                 </Routes>
             </Router>
