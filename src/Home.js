@@ -111,7 +111,7 @@ const HomePage = (theme) => {
                     <Row align={"center"}>
                         <Text size={"small"} color={"black"}>
                             My degree is in Mathematical Physics and I worked as a researcher for the Pixley Theoretical Condensed
-                            Matter Physics Group and as a software engineer for Ameriprise Financial. My professional experience includes
+                            Matter Physics Group. My professional experience includes
                             code development and running high-fidelity simulations with parallel processing and high-performance computers (HPC),
                             distributed computing, and Linux-based HPC clusters. I have a
                             deep working knowledge of numerical linear algebra,
