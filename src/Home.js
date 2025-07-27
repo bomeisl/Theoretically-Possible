@@ -858,7 +858,7 @@ const PhysicsPortfolio = () => {
                                 <h4 style={styles.cardTitle}>Mathematical Physics</h4>
                                 <p style={styles.cardText}>
                                     Extensive experience developing and implementing numerical and analytical solutions for complex
-                                    physical problems. Proficient in finite difference, finite element, Monte Carlo, fast numerical m.
+                                    physical problems. Proficient in finite difference, finite element, Monte Carlo, fast numerical methods.
 
                                 </p>
                             </div>
