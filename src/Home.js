@@ -764,7 +764,7 @@ const PhysicsPortfolio = () => {
                             Kyle Bomeisl
                         </h2>
                         <p style={styles.heroSubtitle}>
-                            Mathematical Physics & Computational Science
+                            Mathematical and Computational Physics
                         </p>
                         <p style={styles.heroDescription}>
                             I spent three years at the Pixley Condensed Matter Physics Research Group of Rutgers University
