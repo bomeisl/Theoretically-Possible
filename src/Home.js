@@ -839,7 +839,7 @@ const PhysicsPortfolio = () => {
                             }}>
                                 <h4 style={styles.cardTitle}>Awards and Honors</h4>
                                 <p style={styles.cardText}>
-                                    Physics | Bachelor's Degree | 2021 Rutgers University (Cum Laude)
+                                    Physics | Bachelor's Degree | Rutgers University (Cum Laude)
                                 </p>
                                 <p style={styles.cardText}>
                                     3rd place in the 2021 TalTech International Olympiad
