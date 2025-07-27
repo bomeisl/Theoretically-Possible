@@ -5,6 +5,7 @@
   "dependencies": {
     "@react-pdf/renderer": "^4.2.1",
     "@szhsin/react-menu": "^4.3.0",
+    "@tailwindcss/postcss": "^4.1.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +13,7 @@
     "bootstrap": "^5.3.3",
     "grommet": "^2.37.0",
     "grommet-icons": "^4.12.4",
+    "lucide-react": "^0.526.0",
     "mathjax": "^3.2.2",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.9",
@@ -47,5 +49,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
 }
